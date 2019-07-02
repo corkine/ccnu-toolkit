@@ -1,0 +1,12 @@
+CHECK_URL: "http://www.ccnu.edu.cn"
+LOGIN_URL: "http://10.220.250.50"
+USERNAME: "DDDDD"
+PASSWORD: "upass"
+NETWORK: "suffix"
+USERNAME_VALUE: "2017110xxxx@cmcc"
+PASSWORD_VALUE: "yourRealPassword"
+NETWORK_VALUE: "2"
+SUCCESS_CHECK: "您已登录成功，欢迎使用！请不要关闭本页。"
+INDEX_CHECK: "鄂ICP备05003325号-1"
+RETRY: 5
+SLEEP: 5
