@@ -1,5 +1,3 @@
-# CCNU-TOOLKIT
-
 这里存放着我在华中师范大学期间，用来简化信息访问而编写的一些小脚本(Java、Scala、Python、TypeScript、JavaScript etc)。所有代码按照 Apache License v2 开源。
 
 ## 1. cardCheck
