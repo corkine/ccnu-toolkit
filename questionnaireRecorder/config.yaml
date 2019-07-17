@@ -1,0 +1,61 @@
+projectName: 毕业问卷
+noDataSymbol: -1
+groupList:
+  -
+    groupName: 基本信息
+    itemList:
+       -
+        name: 姓名
+        sizeSmallerThan: 50
+       -
+        name: 性别
+        matchIn: [1, 2, 3]
+        equalSize: 1
+       -
+        name: 学号
+        equalSize: 10
+        castType: int
+  -
+    groupName: 第一组
+    itemList:
+      -
+        name: 我为什么做家庭作业
+        equalSize: 10
+        castType: int
+      -
+        name: 我为什么做课堂作业
+        equalSize: 10
+        castType: int
+  -
+    groupName: 第二组
+    itemList:
+      -
+        name: 为什么我在课堂上努力回答问题
+        equalSize: 10
+        castType: int
+      -
+        name: 我为什么争取好的在校表现
+        equalSize: 10
+        castType: int
+  -
+    groupName: 第三组
+    itemList:
+      -
+        name: 关于老师的行为认识
+        equalSize: 9
+        castType: int
+      -
+        name: 关于课堂环境
+        equalSize: 7
+      -
+        name: 关于课堂环境2
+        equalSize: 3
+  -
+    groupName: 第四组
+    itemList:
+      -
+        name: 课堂环境
+        equalSize: 10
+      -
+        name: 解决方法
+        equalSize: 4
