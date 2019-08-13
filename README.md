@@ -83,5 +83,30 @@ SLEEP: 5 #每次重试间隔秒数，可自由修改，Integer 类型，正整�
 
 > 源代码遵循 GPL v2 协议开源，不得商用或者修改后闭源使用，违反规则使用程序面临相关的法律责任。
 
+## 4. knownEasy
 
+这一系列都是我常用的 Python 小脚本，每个文件独立，直接运行即可，其目的均是解析网页项目，然后当收到更新，直接推送到 Slack。
 
+推荐在云服务器运行这些脚本，直接替换感兴趣的信息，以及 Slack Webhook 钩子即可推送到你的频道。
+
+### smzdm.py
+
+根据关键词过滤信息，当出现关键词，自动推送到 Slack。
+
+### express.py
+
+自动查询快递，当有更新消息自动推送到 Slack。
+
+### appstore.py
+
+自动检查 App 是否降价，如果降价，自动推送到 Slack。
+
+服务器运行示例如下，`nohup xxx >>log 2>&1 &` xxx 为如下示例命令：
+
+```sh
+python3 -u express.py YT402753666666
+python3 -u smzdm.py --slack https://hooks.slack.com/services/T3P92AF6F/BMBE85T3Q/xxxx iPhone 8|iPhone 7|  Watch|小爱|米家|小度|优衣库|UNIQLO
+python3 -u appstore.py
+```
+
+python -u 目的在于直接输出日志，而不缓存。
