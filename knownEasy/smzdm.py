@@ -127,7 +127,7 @@ def get_info(url:str) -> list:
 		items.append((title, price, link))
 	return items
 
-def get_info_with_filter(urls:list, sleep_func:int, filter) -> list:
+def get_info_with_filter(urls:list, sleep_func, filter) -> list:
 	find = []
 	for url in urls:
 		print("Finding Information in %s"%url)
