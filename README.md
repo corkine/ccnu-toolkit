@@ -25,8 +25,21 @@
 
 > 支持环境: Python 3.5 及以上，安装 BeautifulSoup 4、Requests 包
 
+## 2. autoLoginPython 2020
 
-## 2. autoLogin
+CCNU 校园网自动登录，简单的 Python 脚本文件，依赖 requests 包，以电信校园网进行了测试，正确处理了未连接 WIFI、已上网、账号错误多种意外情况，提供了多次登录重试，防止在高峰期登录失败。
+
+### 使用方法
+
+在 login.py 的 data 中填入你的登录信息，选中 WIFI 选择自动登录，当系统自动连接 WIFI 后，登录脚本会尝试判断是否有网，没网时执行登录，登录后测试，测试不通过重试。
+
+执行 `python login.py` 即可。
+
+如果提示依赖 requests，执行 `pip(3) install requests` 即可。
+
+另，可使用 pyinstaller 直接打包为 exe 格式双击登录，需要安装 pyInstaller，执行 `pip(3) install pyinstaller` 后，执行 `pyinstaller -F -c login.py` 即可。
+
+## 3. autoLoginJava
 
 CCNU 校园网自动登陆，程序依赖于 JVM（JRE 或者 JDK）环境，已编译。
 
@@ -63,7 +76,7 @@ RETRY: 5 #重试次数，可自由修改，Integer 类型，正整数，大于 0
 SLEEP: 5 #每次重试间隔秒数，可自由修改，Integer 类型，正整数
 ```
 
-## 3. questionnaireRecorder
+## 4. questionnaireRecorder
 
 此项目用于进行心理学问卷快速录入，其在之前博客的 Python + Qt 实现的基础上，扩展了适用性，使用 Scala + JavaFx 实现，现版本系统可针对大多数任意需求的问卷进行快速录入。
 
@@ -83,7 +96,7 @@ SLEEP: 5 #每次重试间隔秒数，可自由修改，Integer 类型，正整�
 
 > 源代码遵循 GPL v2 协议开源，不得商用或者修改后闭源使用，违反规则使用程序面临相关的法律责任。
 
-## 4. knownEasy
+## 5. knownEasy
 
 这一系列都是我常用的 Python 小脚本，每个文件独立，直接运行即可，其目的均是解析网页项目，然后当收到更新，直接推送到 Slack。
 
